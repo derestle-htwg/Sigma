@@ -1,6 +1,10 @@
 #include "GLSprite.h"
 #include "GL/glew.h"
 
+#ifdef __unix__
+	#include "SOIL/SOIL.h"
+#endif
+
 #ifdef OS_Win32
 	#include "SOIL/SOIL.h"
 #elif OS_SDL
